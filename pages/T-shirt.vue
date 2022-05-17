@@ -16,7 +16,7 @@
             {{ item.price }}
 
             <v-spacer />
-            <NuxtLink to="/Detail_id"
+            <NuxtLink :to="`/detail/${item.id_product}`"
               ><v-btn
                 small
                 replace
