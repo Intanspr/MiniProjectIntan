@@ -1,7 +1,16 @@
 <template>
-  <v-img style="weidth=1000px" src="https://i.postimg.cc/DzLxvb68/Whats-App-Image-2022-04-25-at-22-37-53.jpg"></v-img>
+  <v-container>
+    <br />
+    <br />
+    <v-img
+      src="https://i.postimg.cc/9My6VFpQ/Whats-App-Image-2022-05-17-at-09-49-34.jpg"
+    ></v-img>
 
+    <NewApp />
 
+    <br /><br />
+    <BestSel />
+  </v-container>
 </template>
 
 <script>

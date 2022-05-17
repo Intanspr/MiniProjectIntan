@@ -43,7 +43,16 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/apollo',
   ],
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://kampus-merdeka03.hasura.app/v1/graphql',
+      },
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -53,8 +62,20 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    meta: {
+      title: 'Nuxt PWA',
+      author: 'Intan Sari Pradini',
+    },
     manifest: {
-      lang: 'en',
+      name: 'Frontend Vue',
+      short_name: 'FE Vue',
+      lang: 'id',
+      useWebmanifestExtension: false,
+      start_url: '/',
+      theme_color: '#ff6666',
+    },
+    workbox: {
+      dev: true,
     },
   },
 
