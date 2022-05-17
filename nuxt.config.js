@@ -61,23 +61,23 @@ export default {
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    meta: {
-      title: 'Nuxt PWA',
-      author: 'Intan Sari Pradini',
-    },
-    manifest: {
-      name: 'Frontend Vue',
-      short_name: 'FE Vue',
-      lang: 'id',
-      useWebmanifestExtension: false,
-      start_url: '/',
-      theme_color: '#ff6666',
-    },
-    workbox: {
-      dev: true,
-    },
-  },
+  // pwa: {
+  //   meta: {
+  //     title: 'Nuxt PWA',
+  //     author: 'Intan Sari Pradini',
+  //   },
+  //   manifest: {
+  //     name: 'Frontend Vue',
+  //     short_name: 'FE Vue',
+  //     lang: 'id',
+  //     useWebmanifestExtension: false,
+  //     start_url: '/',
+  //     theme_color: '#ff6666',
+  //   },
+  //   workbox: {
+  //     dev: true,
+  //   },
+  // },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
