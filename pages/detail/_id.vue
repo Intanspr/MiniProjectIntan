@@ -3,13 +3,13 @@
     <v-row no-gutters>
       <v-col cols="6">
         <v-card class="pa-2" outlined tile>
-          <v-img :src="Allproduct_by_pk.image_path" />
+          <v-img :src="Allproduct_by_pk ? Allproduct_by_pk.image_path : ''" />
         </v-card>
       </v-col>
       <v-col cols="6">
         <v-card class="pa-2" outlined tile>
-          <h3>{{ Allproduct_by_pk.name }}</h3>
-          <h5>{{ Allproduct_by_pk.price }}</h5>
+          <h3>{{ Allproduct_by_pk ? Allproduct_by_pk.name : '' }}</h3>
+          <h5>{{ Allproduct_by_pk ? Allproduct_by_pk.price : '' }}</h5>
         </v-card>
       </v-col>
     </v-row>
