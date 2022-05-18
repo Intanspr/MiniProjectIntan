@@ -6,14 +6,14 @@
     <v-row no-gutters>
       <v-col cols="6">
         <v-card class="pa-2" outlined tile>
-          <v-img :src="Allproduct_by_pk ? Allproduct_by_pk.image_path : ''" />
+          <v-img :src="Localpride_by_pk ? Localpride_by_pk.image_path : ''" />
         </v-card>
       </v-col>
       <v-col cols="6">
         <v-card class="pa-2" outlined tile>
           <br />
-          <h3>{{ Allproduct_by_pk ? Allproduct_by_pk.name : '' }}</h3>
-          <h5>{{ Allproduct_by_pk ? Allproduct_by_pk.price : '' }}</h5>
+          <h3>{{ Localpride_by_pk ? Localpride_by_pk.name : '' }}</h3>
+          <h5>{{ Localpride_by_pk ? Localpride_by_pk.price : '' }}</h5>
           <br />
           <hr />
           <h3>Size</h3>
@@ -96,10 +96,10 @@ import graphql from 'graphql-tag'
 export default {
   name: 'ProductPage',
   apollo: {
-    Allproduct_by_pk: {
+    Localpride_by_pk: {
       query: graphql`
         query MyQuery($id_product: uuid!) {
-          Allproduct_by_pk(id_product: $id_product) {
+          Localpride_by_pk(id_product: $id_product) {
             id_product
             image_path
             name

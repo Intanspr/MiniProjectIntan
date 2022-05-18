@@ -6,22 +6,22 @@
       <v-btn color="black" dark large> LOCAL PRIDE </v-btn>
     </div>
     <v-row>
-      <v-col v-for="item in Localpride" :key="item.id_product" cols="6">
+      <v-col v-for="local in Localpride" :key="local.id_product" cols="6">
         <br />
         <br />
         <v-card class="mx-auto" max-width="500">
-          <v-img :src="item.image_path" height="500px"></v-img>
+          <v-img :src="local.image_path" height="500px"></v-img>
 
           <v-card-title>
-            {{ item.price }}
+            {{ local.price }}
 
             <v-spacer />
-            <NuxtLink to="/Detail_id"
+            <NuxtLink :to="`/detail/${local.id_product}`"
               ><v-btn
                 small
                 replace
                 color="grey"
-                v-bind="item.image_path"
+                v-bind="local.image_path"
                 target="_blank"
               >
                 More Detail

@@ -10,12 +10,12 @@
 
     <v-row>
       <div>
-        <v-btn text> Home </v-btn>
+        <NuxtLink to="/"><v-btn text> Home </v-btn></NuxtLink>
         <v-btn icon @click="show = !show">
           SHOP
           <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         </v-btn>
-        <v-btn text> About </v-btn>
+        <NuxtLink to="/about"><v-btn text> About </v-btn></NuxtLink>
       </div>
     </v-row>
     <v-expand-transition>
