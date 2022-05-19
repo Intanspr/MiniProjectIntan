@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "[Mini-Project-Intan] build --output public",
     "lint": "npm run lint:js && npm run lint:prettier",
     "dev": "nuxt",
     "generate": "nuxt generate",
