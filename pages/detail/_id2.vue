@@ -94,7 +94,7 @@
 <script>
 import graphql from 'graphql-tag'
 export default {
-  name: 'ProductPage',
+  name: 'LocalpPage',
   apollo: {
     Localpride_by_pk: {
       query: graphql`
